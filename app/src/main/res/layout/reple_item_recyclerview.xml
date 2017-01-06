@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdddd">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/board_background"
+
+        >
+
+        <ImageView
+            android:id="@+id/btn_rippleProfileImage"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/rippleProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/btn_rippleProfileImage"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_rippleSetup"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/rippleDate"
+            android:layout_below="@id/rippleProfileName"
+            android:layout_toRightOf="@id/btn_rippleProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016/12/22"
+            android:textSize="8sp"
+            android:textColor="#9fa0a0"
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage1"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/btn_rippleProfileImage"
+            android:layout_marginLeft="8dp"
+            android:background="#484848"
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage2"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/btn_rippleProfileImage"
+            android:background="#33ab"
+            android:layout_toRightOf="@id/rippleImage1"
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage3"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/btn_rippleProfileImage"
+            android:layout_marginRight="8dp"
+            android:background="#8ab"
+            android:layout_toRightOf="@id/rippleImage2"
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage4"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/rippleImage1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="#a996"
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage5"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/rippleImage2"
+            android:layout_toRightOf="@id/rippleImage4"
+            android:layout_marginBottom="16dp"
+            android:background="#000000"
+
+            />
+
+        <ImageView
+            android:id="@+id/rippleImage6"
+            android:layout_width="114.6dp"
+            android:layout_height="114.6dp"
+            android:layout_below="@id/rippleImage3"
+            android:layout_toRightOf="@id/rippleImage5"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="#b23c"
+            />
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c9caca"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/txt_ripple"
+            />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_below="@+id/line1"
+            android:id="@+id/rippleLikeImage"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/rippleLikeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rippleLikeImage"
+            android:layout_below="@id/line1"
+            android:text="228"
+            android:layout_marginTop="13dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="후야라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라라"
+            android:textSize="9sp"
+            android:textColor="#727171"
+            android:layout_below="@+id/rippleImage4"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignLeft="@+id/rippleLikeImage"
+            android:layout_alignStart="@+id/rippleLikeImage" />
+    </RelativeLayout>
+    />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.junhyuk.soptproject">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Splash" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity android:name=".Activity.P_StyleFeed.coordiking_activity"/>
+        <activity android:name=".Activity.P_StyleFeed.thisweek_activity"/>
+        <activity android:name=".Activity.P_StyleFeed.recommend_activity"/>
+        <activity android:name=".Activity.P_My.RegisterActivity"/>
+        <activity android:name=".Activity.P_Profile.SignUpPhotoActivity"/>
+        <activity android:name=".Activity.P_Setup.MainSetup"/>
+        <activity android:name=".Activity.P_Setup.Notice"/>
+        <activity android:name=".Activity.P_Setup.Version"/>
+        <activity android:name=".Activity.P_Setup.Alarm"/>
+        <activity android:name=".Activity.P_Setup.Screen"/>
+        <activity android:name=".Activity.P_Setup.Others"/>
+        <activity android:name=".Activity.P_Coordination.Reple.RepleActivity"/>
+        <activity android:name=".Activity.P_Coordination.CoordiRegister.CodiRegisterActivity"/>
+        <activity android:name=".Activity.P_My.list_Register.ListRegisterActivity">
+        </activity>
+    </application>
+
+</manifest>

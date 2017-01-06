@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/page1">
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/btn_move_list_list1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/shirt_default"
+                />
+
+            <Button
+                android:id="@+id/btn_move_list_list2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/pants_default"
+                />
+            <Button
+                android:id="@+id/btn_move_list_list3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/jacket_default"
+                />
+            <Button
+                android:id="@+id/btn_move_list_list4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/hat_dafault"
+                />
+            <Button
+                android:id="@+id/btn_move_list_list5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/shoe_default"
+                />
+            <Button
+                android:id="@+id/btn_move_list_list6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/watch_default"
+                />
+            <Button
+                android:id="@+id/btn_move_list_list7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/star_default"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page_list1"
+            android:layout_width="0dip"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageButton
+                    android:id="@+id/addBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/plus_floating_button"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

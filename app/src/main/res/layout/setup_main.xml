@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c92ced3">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:background="@mipmap/left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="설정"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"  />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="@color/b5b5b6"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+        <ImageButton
+            android:id="@+id/setup_noticeimage"
+            android:background="@mipmap/notice_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:text="공지사항"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/setup_noticeimage"
+            android:layout_marginLeft="16dp"/>
+
+        <Button
+            android:id="@+id/notice_button1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/right_arrow"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/c898989"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/version_button"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+
+        <ImageButton
+            android:id="@+id/setup_versionimage"
+            android:background="@mipmap/information_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:text="버전정보"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/setup_versionimage"
+            android:layout_marginLeft="16dp"/>
+
+        <Button
+            android:id="@+id/version_button1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/right_arrow"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/c898989"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alarm_button"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+
+        <ImageButton
+            android:id="@+id/setup_alarmimage"
+            android:background="@mipmap/alerts_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:text="알림"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/setup_alarmimage"
+            android:layout_marginLeft="16dp"/>
+
+        <Button
+            android:id="@+id/alarm_button1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/right_arrow"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/c898989"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/screen_button"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+
+            <ImageButton
+                android:id="@+id/setup_screenimage"
+                android:background="@mipmap/screen_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:text="화면"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@id/setup_screenimage"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/screen_button1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_arrow"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/c898989"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/others_button"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+
+            <ImageButton
+                android:id="@+id/others_noticeimage"
+                android:background="@mipmap/etc_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:text="기타"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@id/others_noticeimage"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/others_button1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/right_arrow"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/c898989"
+                android:layout_alignParentBottom="true"
+                />
+
+    </RelativeLayout>
+
+</LinearLayout>

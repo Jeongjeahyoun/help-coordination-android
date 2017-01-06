@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_move_list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList1"/>
+        <Button
+            android:id="@+id/btn_move_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList2"/>
+        <Button
+            android:id="@+id/btn_move_list3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList3"/>
+        <Button
+            android:id="@+id/btn_move_list4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList4"/>
+        <Button
+            android:id="@+id/btn_move_list5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList5"/>
+        <Button
+            android:id="@+id/btn_move_list6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList6"/>
+        <Button
+            android:id="@+id/btn_move_list7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bcbcbc"
+            android:text="Page1\nList7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_page_list1"
+        android:layout_width="0dip"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

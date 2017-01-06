@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c92ced3">
+            <ImageButton
+                android:id="@+id/backButton"
+                android:background="@mipmap/left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="11.5dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:text="코디왕 랭킹"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/img_coordiking"
+                android:layout_marginTop="161dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/img_woman"/>
+            
+            <TextView
+                android:id="@+id/coordiking_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:text="후야"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/coordiking_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Time is Gold"
+                android:textColor="#595757"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/e2e2e2"
+            >
+
+            <TextView
+                android:id="@+id/ranking"
+                android:text="랭킹"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="48dp"
+                />
+            <TextView
+                android:id="@+id/mywriting"
+                android:text="작성글"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ranking"
+                android:layout_alignTop="@id/ranking"
+                android:layout_marginLeft="104dp" />
+
+            <TextView
+                android:id="@+id/mycoordi"
+                android:text="작성코디"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mywriting"
+                android:layout_alignTop="@id/mywriting"
+                android:layout_marginLeft="88dp" />
+
+            <TextView
+                android:id="@+id/ranking_content"
+                android:text="1"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking"
+                android:layout_alignLeft="@id/ranking"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:id="@+id/mywriting_content"
+                android:text="30"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mywriting"
+                android:layout_alignLeft="@id/mywriting"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:id="@+id/mycoordi_content"
+                android:text="257"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mycoordi"
+                android:layout_alignLeft="@id/mycoordi"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="12dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textView_my"
+                android:text="작성한 글"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/coordi_grayline"
+                android:layout_width="328dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/c898989"
+                android:layout_below="@id/textView_my"/>
+
+            <ImageView
+                android:id="@+id/img_my"
+                android:background="@mipmap/writing_box"
+                android:layout_below="@id/coordi_grayline"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/img_mycoordi"
+                android:background="@mipmap/writing_coodi_box"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/img_my"
+                android:layout_below="@id/coordi_grayline"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

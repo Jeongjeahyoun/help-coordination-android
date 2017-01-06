@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#f2f2f2">
+
+    <RelativeLayout
+        android:layout_width="145.5dp"
+        android:layout_height="145.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_MyCloset2"
+            />
+
+        <View
+            android:id="@+id/halfalpha"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:alpha="0.5"
+            android:background="#000000"
+            android:layout_alignParentBottom="true"
+
+            />
+
+        <TextView
+            android:id="@+id/nameView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="New Text"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            />
+
+
+        <TextView
+            android:id="@+id/memoView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="7sp"
+            android:textColor="#e2e1e1"
+            android:text="떡볶이 코트같고 이뻐여^^"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/wastebasket_button"
+            android:textColor="#ffffff"
+            android:textSize="6dp"
+            android:layout_gravity="left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

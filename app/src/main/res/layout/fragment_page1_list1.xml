@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="1페이지 1번 리스트입니다"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2">
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/circle_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="+"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/chageArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/fragment_page1"/>
+
+
+        </LinearLayout>
+
+        <!--<com.example.junhyuk.soptproject.Activity.viewpager.CustomViewPager-->
+            <!--android:id="@+id/viewpager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</com.example.junhyuk.soptproject.Activity.viewpager.CustomViewPager>-->
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

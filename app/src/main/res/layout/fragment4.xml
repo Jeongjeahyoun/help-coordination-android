@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/user_image"
+            android:layout_marginTop="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/woman_click"/>
+
+        <TextView
+            android:id="@+id/coordiking_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="후야"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/coordiking_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Time is Gold"
+            android:textColor="#595757"
+            android:textSize="11sp"/>
+        <Button
+            android:id="@+id/profile_change_Btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="78dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="프로필 수정"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="@drawable/border_profile"
+
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/e2e2e2"
+        >
+
+        <TextView
+            android:id="@+id/ranking"
+            android:text="랭킹"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="48dp"
+            />
+        <TextView
+            android:id="@+id/mywriting"
+            android:text="작성글"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ranking"
+            android:layout_alignTop="@id/ranking"
+            android:layout_marginLeft="104dp" />
+
+        <TextView
+            android:id="@+id/mycoordi"
+            android:text="작성코디"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mywriting"
+            android:layout_alignTop="@id/mywriting"
+            android:layout_marginLeft="88dp" />
+
+        <TextView
+            android:id="@+id/ranking_content"
+            android:text="1"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ranking"
+            android:layout_alignLeft="@id/ranking"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:id="@+id/mywriting_content"
+            android:text="30"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mywriting"
+            android:layout_alignLeft="@id/mywriting"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:id="@+id/mycoordi_content"
+            android:text="257"
+            android:textSize="8sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mycoordi"
+            android:layout_alignLeft="@id/mycoordi"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textView_my"
+            android:text="내가 쓴 글"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/img_my"
+            android:background="@mipmap/writing_box"
+            android:layout_below="@id/textView_my"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageView
+            android:id="@+id/img_mycoordi"
+            android:background="@mipmap/writing_coodi_box"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/img_my"
+            android:layout_below="@id/textView_my"
+            android:layout_marginLeft="28dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
